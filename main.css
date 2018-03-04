@@ -1,158 +1,59 @@
-.mainContainer{
-	padding: 3%;
-	background-image: url("homeBack.jpg");
-	background-repeat: no-repeat;
-	background-size: 3000px 2000px;
-	width: 100%;
-	height: 100%;
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar {
+	background-color: #212529;
+}
+ .navbar .navbar-brand {
+ 	color: #fed136;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
-.projectContainer{
-	padding: 3%;
-	background-image: url("homeBack.jpg");
-	background-repeat: no-repeat;
-	background-size: 3000px 2000px;
-
-}
-.imageDiv{
-	width: 100%;
-
-	border: 10px solid transparent;
-}
-.profileColorRow1{
-	background-image:  url("infoBackGround.jpg");
-	background-repeat: no-repeat;
-	background-size: 1900px 1000px;
-	padding: 3%;
-}
-
-.profileColorRow2{
-	background-image:  url("infoBackGround.jpg");
-	background-repeat: no-repeat;
-	background-size: 1900px 300px;
-	padding: 3%;
-	margin-top: 1%;
-}
-.projectTitle{
-	text-align: center;
-}
-.profileTitleRow{
-	margin-bottom: 1%;
-}
-.profileInfo{
-	background: black;
-
-}
-.projectTitleBar{
-	background: black;
-	margin-top:1.2%;
-	margin-bottom: 1.2%;
-}
-.colColor{
-	background: rgb(244, 245, 242);
-	font-size:100%;
-	
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-.row1{
-
-	height: 100%;
-	padding: 3%;
-	padding-bottom: 0%;
-	background:white;
-}
-.row2{
-
-	height: 100%;
-	background:white;
-	padding: 3.7%;
-	padding-top: 0%;
-
-}
-.row2Color{
-	height: 50%;
-	background:#333;
-	color:white;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.bold-header {
 	font-size: 50px;
-	padding: 5%;
+  font-weight: 700;
+  line-height: 50px;
+	margin-bottom: 25px;
+
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.row2Color2{
-	height: 50%;
-	background: rgba(188, 190, 182, 0.801);
-	color: black;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 50px;
-	padding: 5%;
-	padding-left: 20%;
+.curved-header {
+		font-size: 30px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-.row3Color{
-	height: 100%;
-	color:black;
-	width: 100%;
-	list-style-type: none;
-	padding: 3%
-}
-.InformationSection{
-	list-style-type: none;
-	background-image:  url("infoBackGround.jpg");
-	padding: 3%;
-	padding-left: 1%;
-text-align: left;
-
+.section {
+  padding: 20px;
 }
 
-.portfolio-box {
-	position: relative;
-	display: block;
-	max-width: 650px;
-	margin: 0 auto;
-  }
-  
-  .portfolio-box .portfolio-box-caption {
-	position: absolute;
-	bottom: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	opacity: 0;
-	color: #fff;
-	background: rgba(240, 95, 64, 0.9);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	transition: all 0.2s;
-  }
-  
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	transform: translateY(-50%);
-	text-align: center;
-  }
-  
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-	padding: 0 15px;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  }
-  
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-	font-size: 14px;
-	font-weight: 600;
-	text-transform: uppercase;
-  }
-  
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-	font-size: 18px;
-  }
-  
-  .portfolio-box:hover .portfolio-box-caption {
-	opacity: 1;
-  }
-  
-  .portfolio-box:focus {
-	outline: none;
-  }
+.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px;
+    color: #fff;
+    background: -webkit-linear-gradient(right,#000 0,transparent 30%,transparent 3%,#000 100%),url(../img/product.png);
+    background-size: cover;
+		background-repeat: no-repeat;
+}
