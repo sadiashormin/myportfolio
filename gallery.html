@@ -18,8 +18,6 @@
 <body>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	 crossorigin="anonymous"></script>
 
@@ -27,7 +25,7 @@
 		<div class="col-sm-12">
 			<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 				<div class="container">
-					<a class="navbar-brand js-scroll-trigger" href="#page-top">Sadia Shormin</a>
+					<a class="navbar-brand" href="#page-top">Sadia Shormin</a>
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 					 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 						Menu
@@ -36,22 +34,22 @@
 					<div class="collapse navbar-collapse" id="navbarResponsive">
 						<ul class="navbar-nav text-uppercase ml-auto">
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="index.html">HOME</a>
+								<a class="nav-link" href="index.html">HOME</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="about.html">ABOUT ME</a>
+								<a class="nav-link" href="about.html">ABOUT ME</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+								<a class="nav-link selected" href="gallery.html">Gallery</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="vision.html">Vision</a>
+								<a class="nav-link" href="vision.html">Vision</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="projects.html">PROJECTS</a>
+								<a class="nav-link" href="projects.html">PROJECTS</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link js-scroll-trigger" href="resume.pdf">RESUME</a>
+								<a class="nav-link" href="resume.pdf">RESUME</a>
 							</li>
 						</ul>
 					</div>
@@ -64,10 +62,10 @@
 
 	<div class="home-page">
 		<div class="projectContainer">
-			<div class="row" style=" margin:20px;margin-top:100px;" >
+			<div class="row" style=" margin:20px;margin-top:100px;">
 				<div class="row popup-gallery">
 					<div class="col-lg-3 col-sm-3 ">
-						<a class="portfolio-box imageDiv" href="img/gallery/robot.jpg">
+						<a class="portfolio-box imageDiv" data-toggle="modal" data-target="#robot">
 							<img class="img-fluid imageDiv" src="img/gallery/robot.jpg" alt="" width="100%">
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
@@ -82,7 +80,7 @@
 						</a>
 					</div>
 					<div class="col-lg-3 col-sm-3">
-						<a class="portfolio-box imageDiv" href="img/gallery/ezparkmobilelaptop.png">
+						<a class="portfolio-box imageDiv" data-toggle="modal" data-target="#ez">
 							<img class="img-fluid imageDiv" src="img/gallery/ezparkmobilelaptop.png" alt="" width="100%">
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
@@ -97,7 +95,7 @@
 						</a>
 					</div>
 					<div class="col-lg-3 col-sm-3">
-						<a class="portfolio-box imageDiv" href="img/gallery/te.png">
+						<a class="portfolio-box imageDiv" data-toggle="modal" data-target="#te">
 							<img class="img-fluid imageDiv" src="img/gallery/te.png" alt="" width="100%" style="">
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
@@ -113,7 +111,7 @@
 					</div>
 
 					<div class="col-lg-3 col-sm-3">
-						<a class="portfolio-box imageDiv" href="img/portfolio/fullsize/carProject.jpg">
+						<a class="portfolio-box imageDiv" data-toggle="modal" data-target="#car">
 							<img class="img-fluid imageDiv" src="img/portfolio/thumbnails/carProject.jpg" alt="" width="100%">
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
@@ -121,19 +119,73 @@
 										Mechanical
 									</div>
 									<div class="bold-header">
-										 Fuel Efficient Car 
+										Fuel Efficient Car
 									</div>
 								</div>
 							</div>
 						</a>
 					</div>
+
+					<div class="modal fade" id="robot" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<img class="img-fluid imageDiv" src="img/gallery/robot.jpg" alt="" width="100%">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" id="ez" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<img class="img-fluid imageDiv" src="img/gallery/ezparkmobilelaptop.png" alt="" width="100%">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="te" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<img class="img-fluid imageDiv" src="img/gallery/te.png" alt="" width="100%">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="car" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<img class="img-fluid imageDiv" src="img/portfolio/thumbnails/carProject.jpg" alt="" width="100%">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
 
 		</div>
-	
+
 	</div>
+	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
